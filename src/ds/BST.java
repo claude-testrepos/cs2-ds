@@ -37,5 +37,18 @@ public class BST<T extends Comparable<T>> {
         return 1 + Math.max(height(n.left), height(n.right));
     }
 
+    public java.util.List<T> inOrder() {
+        java.util.List<T> out = new java.util.ArrayList<>();
+        inOrder(root, out);
+        return out;
+    }
+
+    private void inOrder(Node n, java.util.List<T> out) {
+        if (n == null) return;
+        inOrder(n.left, out);
+        out.add(n.value);
+        inOrder(n.right, out);
+    }
+
     public int size() { return size; }
 }

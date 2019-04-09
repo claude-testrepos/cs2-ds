@@ -37,5 +37,6 @@ public class DataStructuresTest {
         assertTrue(t.contains(4));
         assertFalse(t.contains(7));
         assertEquals(3, t.height());
+        assertEquals(java.util.Arrays.asList(1, 3, 4, 5, 8), t.inOrder());
     }
 }
