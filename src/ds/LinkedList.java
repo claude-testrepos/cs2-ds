@@ -49,6 +49,13 @@ public class LinkedList<T> implements Iterable<T> {
         return cur.value;
     }
 
+    public boolean contains(T value) {
+        for (T v : this) {
+            if (v == null ? value == null : v.equals(value)) return true;
+        }
+        return false;
+    }
+
     public int size() { return size; }
     public boolean isEmpty() { return size == 0; }
 

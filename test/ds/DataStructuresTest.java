@@ -10,6 +10,8 @@ public class DataStructuresTest {
         l.add(1); l.add(2); l.add(3);
         assertEquals(3, l.size());
         assertEquals(Integer.valueOf(2), l.get(1));
+        assertTrue(l.contains(3));
+        assertFalse(l.contains(42));
     }
 
     @Test
