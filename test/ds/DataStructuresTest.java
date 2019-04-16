@@ -23,6 +23,11 @@ public class DataStructuresTest {
         assertTrue(s.isEmpty());
     }
 
+    @Test(expected = java.util.EmptyStackException.class)
+    public void peekOnEmptyStackThrows() {
+        new Stack<Integer>().peek();
+    }
+
     @Test
     public void queueIsFifo() {
         Queue<String> q = new Queue<>();

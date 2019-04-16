@@ -5,7 +5,10 @@ public class Stack<T> {
 
     public void push(T v) { items.addFirst(v); }
     public T pop() { return items.removeFirst(); }
-    public T peek() { return items.get(0); }
+    public T peek() {
+        if (items.isEmpty()) throw new java.util.EmptyStackException();
+        return items.get(0);
+    }
     public boolean isEmpty() { return items.isEmpty(); }
     public int size() { return items.size(); }
 }
