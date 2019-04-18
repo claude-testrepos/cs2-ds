@@ -4,7 +4,7 @@ Implementations from my Data Structures course, Winter 2019.
 
 ## Contents
 
-- Singly likned list
+- Singly linked list
 - Stack / Queue
 - Binary search tree
 
